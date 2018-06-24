@@ -24,6 +24,7 @@ const List = styled.ul`
 const Item = styled.li`
   display: inline-block;
   padding: 0.25em 0;
+  margin: 0.25em 0;
   width: 100%;
   @media screen and (min-width: ${props => props.theme.responsive.small}) {
     width: auto;
@@ -37,6 +38,12 @@ const Item = styled.li`
     }
     &:visited {
       color: ${props => props.theme.colors.base};
+    }
+    & > * {
+      margin: 0 1em;
+      &:hover {
+        color: ${props => props.theme.colors.highlight};
+      }
     }
   }
 `
@@ -55,6 +62,24 @@ const Footer = () => (
             style={{ width: '100px' }}
             alt="Powered by Contentful"
           />
+        </a>
+      </Item>
+      <Item>
+        <a
+          href="https://twitter.com/patrickskrine"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          className="social-links"
+        >
+          <i className="fab fa-twitter"></i>
+        </a>  
+        <a
+          href="https://medium.com/@patrickskrine"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          className="social-links"
+        >
+        <i className="fab fa-medium-m"></i>
         </a>
       </Item>
       <Item>
