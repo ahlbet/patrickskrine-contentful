@@ -3,7 +3,10 @@ import CardList from '../components/CardList'
 import Card from '../components/Card'
 import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
+import Hero from '../components/Hero'
+import heroImage from '../images/patrick-hero.jpg'
 import SEO from '../components/SEO'
+import './index.css'
 
 const Index = ({ data }) => {
   const posts = data.allContentfulPost.edges
@@ -15,6 +18,7 @@ const Index = ({ data }) => {
         <PageTitle small>
           Skrine's Take
         </PageTitle>
+        <div className="home-header"></div>
         <CardList>
           {posts.map(({ node: post }) => (
             <Card

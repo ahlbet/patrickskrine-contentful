@@ -1,0 +1,8 @@
+.home-header {
+  background-image: url('../images/patrick-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  height: 50vh;
+  margin-bottom: 3rem;
+}

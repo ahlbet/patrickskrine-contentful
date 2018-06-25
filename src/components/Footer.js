@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Wrapper = styled.footer`
   display: flex;
@@ -71,7 +72,7 @@ const Footer = () => (
           target="_blank"
           className="social-links"
         >
-          <i className="fab fa-twitter"></i>
+          <FontAwesomeIcon icon={["fab", "twitter"]} />
         </a>  
         <a
           href="https://medium.com/@patrickskrine"
@@ -79,7 +80,7 @@ const Footer = () => (
           target="_blank"
           className="social-links"
         >
-        <i className="fab fa-medium-m"></i>
+        <FontAwesomeIcon icon={["fab", "medium-m"]} />
         </a>
       </Item>
       <Item>

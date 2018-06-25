@@ -6,7 +6,13 @@ import '../styles/global'
 import theme from '../styles/theme'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
-import favicon from '../images/favicon.ico'
+// import favicon from '../images/favicon.ico'
+import favicon from '../images/patrick-fav.png'
+import { library } from '@fortawesome/fontawesome-svg-core'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faMediumM } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faTwitter, faMediumM)
 
 const Template = ({ children }) => {
   return (
